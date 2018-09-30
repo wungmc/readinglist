@@ -1,7 +1,9 @@
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Reading List</title>
-    <link rel="stylesheet" th:href="@{/style.css}"></link>
+    <!--css文件直接放在static根目录下居然不起作用，加了一个css目录后就可以了。。。-->
+    <link type="text/css" rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"></link>
 </head>
 <body>
 <h2>Your Reading List</h2>
