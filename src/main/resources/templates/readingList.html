@@ -36,6 +36,10 @@
     <label for="description">Description:</label><br/>
     <textarea name="description" cols="80" rows="5">
         </textarea><br/>
+
+    <input type="hidden" name="${_csrf.parameterName}"
+           value="${_csrf.token}" />
+
     <input type="submit"></input>
 </form>
 </body>
