@@ -6,7 +6,7 @@
 	<groupId>com.wung</groupId>
 	<artifactId>readinglist</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>reading list</name>
 	<description>Demo project for Spring Boot1</description>
