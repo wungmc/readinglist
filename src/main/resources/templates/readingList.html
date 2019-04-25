@@ -37,8 +37,8 @@
     <textarea name="description" cols="80" rows="5">
         </textarea><br/>
 
-    <input type="hidden" name="${_csrf.parameterName}"
-           value="${_csrf.token}" />
+    <input type="hidden" th:name="${_csrf.parameterName}"
+           th:value="${_csrf.token}" />
 
     <input type="submit"></input>
 </form>

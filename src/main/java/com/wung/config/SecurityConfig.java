@@ -18,8 +18,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
  *
  * @author wung 2018/9/28.
  */
-// @Configuration
-// @EnableWebSecurity
+
+// 注释掉这个配置类，会弹security的默认登录页
+@Configuration
+@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
@@ -61,7 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		http.authorizeRequests()
 				// / 路径的请求必须认证且有READER角色
-				.antMatchers("/").access("hasRole('READER')")
+				// .antMatchers("/").access("hasRole('READER')")
 				// 其它路径都开放
 				.antMatchers("/**").permitAll()
 
